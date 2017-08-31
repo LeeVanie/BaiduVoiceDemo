@@ -61,7 +61,7 @@ public class ActivityWakeUp extends Activity {
                     } else if ("wp.exit".equals(name)) {
                         txtLog.append("唤醒已经停止: " + params + "\r\n");
                     }
-                } catch (JSONException e) {
+                } catch (JSONException e) { 
                     throw new AndroidRuntimeException(e);
                 }
             }
