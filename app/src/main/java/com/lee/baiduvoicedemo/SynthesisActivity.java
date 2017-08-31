@@ -16,14 +16,6 @@ import com.baidu.tts.client.SpeechSynthesizer;
 import com.baidu.tts.client.SpeechSynthesizerListener;
 import com.baidu.tts.client.TtsMode;
 
-/**
- * @类名: ${type_name}
- * @功能描述:
- * @作者: ${user}
- * @时间: ${date}
- * @最后修改者:
- * @最后修改内容:
- */
 public class SynthesisActivity extends Activity implements SpeechSynthesizerListener {
 
     private EditText content;
@@ -161,4 +153,4 @@ public class SynthesisActivity extends Activity implements SpeechSynthesizerList
         super.onDestroy();
     }
 }
-//jhfghfh
+
