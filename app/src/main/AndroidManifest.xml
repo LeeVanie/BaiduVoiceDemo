@@ -115,6 +115,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity android:name=".SynthSetting"
+                  android:label="语音合成设置"
+                  android:configChanges="orientation|keyboardHidden|screenLayout"
+                  android:theme="@android:style/Theme.DeviceDefault.Light"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.baidu.speech.asr.demo.setting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
         <!-- end : baidu speech sdk-->
     </application>
 

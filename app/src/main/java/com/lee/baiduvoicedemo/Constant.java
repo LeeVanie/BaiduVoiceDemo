@@ -5,8 +5,6 @@ import android.os.Environment;
 import java.io.File;
 
 public class Constant {
-    public static final String EXTRA_KEY = "key";
-    public static final String EXTRA_SECRET = "secret";
     public static final String EXTRA_SAMPLE = "sample";
     public static final String EXTRA_SOUND_START = "sound_start";
     public static final String EXTRA_SOUND_END = "sound_end";
@@ -40,10 +38,6 @@ public class Constant {
     public static final String VAD_SEARCH = "search";
     public static final String VAD_INPUT = "input";
 
+    public static int speaker = 0, volume = 5, speed = 5, pitch = 5;
 
-    /**
-     * 手机存储路径
-     * Environment.getExternalStorageDirectory();
-     */
-    public static final String PHONE_PATH = File.separator + "voicetest" + File.separator + "wakeup" + File.separator;
 }
