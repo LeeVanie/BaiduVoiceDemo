@@ -15,8 +15,6 @@ import com.baidu.speech.EventManagerFactory;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 
 public class ActivityWakeUp extends Activity {
@@ -68,8 +66,7 @@ public class ActivityWakeUp extends Activity {
         });
 
         // 3) 通知唤醒管理器, 启动唤醒功能
-        CopyAssetsFile assetsFile = new CopyAssetsFile();
-        assetsFile.copyFilesFassets(this, "assets/WakeUp.bin", "voicetest/WakeUp.bin");
+      
         HashMap params = new HashMap();
         params.put("kws-file", Environment.getExternalStorageDirectory().getAbsolutePath()+"/voicetest/WakeUp.bin"); 
         // 设置唤醒资源,唤醒资源请到 http://yuyin.baidu.com/wake#m4 来评估和导出

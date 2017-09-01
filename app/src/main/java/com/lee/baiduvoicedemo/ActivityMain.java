@@ -26,10 +26,13 @@ public class ActivityMain extends ListActivity {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         sp.edit().remove(Constant.EXTRA_INFILE).commit(); // infile参数用于控制识别一个PCM音频流（或文件），每次进入程序都将该值清楚，以避免体验时没有使用录音的问题
 
-        setListAdapter(new SimpleAdapter(this, getData(), android.R.layout.simple_list_item_2,
-                new String[]{"title", "description"}, new int[]{
-                android.R.id.text1, android.R.id.text2
-        }));
+        CopyAssetsFile assetsFile = new CopyAssetsFile();
+        assetsFile.copyFilesFassets(this, "assets/WakeUp.bin", "voicetest/WakeUp.bin");
+        
+//        setListAdapter(new SimpleAdapter(this, getData(), android.R.layout.simple_list_item_2,
+//                new String[]{"title", "description"}, new int[]{
+//                android.R.id.text1, android.R.id.text2
+//        }));
     }
 
     /**

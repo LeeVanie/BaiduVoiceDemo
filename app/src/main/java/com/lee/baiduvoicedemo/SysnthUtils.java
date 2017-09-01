@@ -20,7 +20,6 @@ import com.baidu.tts.client.TtsMode;
  */
 public class SysnthUtils {
     
-    public SysnthUtils mSysnthUtils;
     // 语音合成客户端
     private SpeechSynthesizer mSpeechSynthesizer;
     private String mSampleDirPath = Environment.getExternalStorageDirectory().getAbsolutePath();
